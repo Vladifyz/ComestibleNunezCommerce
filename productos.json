@@ -1,0 +1,112 @@
+[
+    {
+        "id": "saladix",
+        "titulo": "Saladix",
+        "imagen": "./assets/img/saladix.webp",
+        "categoria": {
+            "nombre": "Almacen",
+            "id": "almacen"
+        },
+        "precio": 1500
+    },
+    {
+        "id": "lays",
+        "titulo": "Papas Lays",
+        "imagen": "./assets/img/lays.webp",
+        "categoria": {
+            "nombre": "Bebidas",
+            "id": "bebidas"
+        },
+        "precio": 2300
+    },
+    {
+        "id": "papitas",
+        "titulo": "Papas lays 2",
+        "imagen": "./assets/img/papas.png",
+        "categoria": {
+            "nombre": "Lacteos",
+            "id": "lacteos"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "todos1",
+        "titulo": "todos",
+        "imagen": "./assets/img/saladix.webp",
+        "categoria": {
+            "nombre": "todos",
+            "id": "todos"
+        },
+        "precio": 1500
+    },
+    {
+        "id": "todos2",
+        "titulo": "todos",
+        "imagen": "./assets/img/saladix.webp",
+        "categoria": {
+            "nombre": "todos",
+            "id": "todos"
+        },
+        "precio": 1500
+    },
+        {
+        "id": "todos3",
+        "titulo": "todos",
+        "imagen": "./assets/img/saladix.webp",
+        "categoria": {
+            "nombre": "todos",
+            "id": "todos"
+        },
+        "precio": 1500
+    },
+        {
+        "id": "todos4",
+        "titulo": "todos",
+        "imagen": "./assets/img/saladix.webp",
+        "categoria": {
+            "nombre": "todos",
+            "id": "todos"
+        },
+        "precio": 1500
+    },
+        {
+        "id": "marlborobox20",
+        "titulo": "Marlboro Box 20",
+        "imagen": "https://images.rappi.com.ar/products/3138bc1e-98bd-48f7-ae85-8eb21f69c8d9.png?d=900x750&e=webp&q=30",
+        "categoria": {
+            "nombre": "Cigarrillos",
+            "id": "cigarros"
+        },
+        "precio": 4800
+    },
+        {
+        "id": "chesterfield20",
+        "titulo": "Chesterfield Común 20",
+        "imagen": "https://images.rappi.com.ar/products/071c5170-305c-4a5d-a4ce-4e11e657efff.png?d=900x750&e=webp&q=30",
+        "categoria": {
+            "nombre": "Cigarrillos",
+            "id": "cigarros"
+        },
+        "precio": 3600
+    },
+        {
+        "id": "luckyconvertible20",
+        "titulo": "Lucky Convertible 20",
+        "imagen": "https://images.rappi.com.ar/products/7fc045c6-d1ba-4e7b-8112-9a05168732e1.png?d=900x750&e=webp&q=30",
+        "categoria": {
+            "nombre": "Cigarrillos",
+            "id": "cigarros"
+        },
+        "precio": 4000
+    },
+        {
+        "id": "marlborofusion20",
+        "titulo": "Marlboro Fusion Sandia",
+        "imagen": "https://images.rappi.com.ar/products/3e2d1d89-5803-46e7-9190-439a5679202b.png?d=900x750&e=webp&q=30",
+        "categoria": {
+            "nombre": "Cigarrillos",
+            "id": "cigarros"
+        },
+        "precio": 4000
+    }
+]

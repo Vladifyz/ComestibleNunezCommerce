@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --clr-main: orange;
+  --clr-main-light: ;
+  --clr-white: #ececec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #526581;
+  fill: #8491a5;
+}
+
+body {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  background-color: #fff;
+  width: max-content;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__list {
+  list-style: none;
+  padding: 0;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sidebar__element {
+  padding: 0.8rem 1rem;
+  border-radius: 3px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40px 1fr;
+
+  color: #526581;
+  fill: #8491a5;
+
+  text-wrap: nowrap;
+}
+
+.sidebar__element:not(:has(.sidebar__icon--logo)):hover {
+  background-color: #007aff;
+  color: #fff;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.sidebar__element:has(.sidebar__icon--logo) {
+  margin-bottom: 1rem;
+}
+
+.sidebar__icon--logo {
+  max-width: 30px;
+}
+
+.buscador {
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/*
+  Aca comienza el contenedor de los productos
+*/
+
+main {
+  background-color: var(--clr-white);
+  margin: 1rem;
+  border-radius: 2rem;
+  padding: 3rem;
+  width: 100%;
+  position: relative;
+}
+
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1rem;
+}
+
+.producto-imagen {
+  max-width: 180px;
+  border-radius: 1rem;
+}
+
+.producto-detalles {
+  background-color: var(--clr-main);
+  color: var(--clr-white);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-top: -2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.producto-titulo {
+  font-size: 0.8rem;
+}
+
+.producto-agregar {
+  border: 0;
+  background-color: var(--clr-white);
+  color: var(--clr-main);
+  padding: 0.3rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 2px solid var(--clr-white);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.producto-agregar:hover {
+  background-color: var(--clr-main);
+  color: var(--clr-white);
+}
+
+.numerito {
+  background-color: var(--clr-white);
+  color: var(--clr-main);
+  padding: 0.15rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.filtro {
+  display: none;
+}
+
+.navbar__list a.active {
+  background: orange;
+}
+
+.navbar__list a:hover {
+  background: orange;
+}
+
+.navbar__list:hover a.active:not(:hover) {
+  background: none;
+}
+
+/* Carrito */
+
+.contenedor-carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.carrito-vacio,
+.carrito-comprado {
+  color: var(--clr-main);
+}
+
+.carrito-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.carrito-producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-gray);
+  color: var(--clr-main);
+  padding: 0.5rem;
+  padding-right: 1.5rem;
+  border-radius: 1rem;
+}
+
+.carrito-producto-imagen {
+  width: 4rem;
+  border-radius: 1rem;
+}
+
+.carrito-producto small {
+  font-size: 0.75rem;
+}
+
+.carrito-producto-eliminar {
+  border: 0;
+  background-color: transparent;
+  color: var(--clr-red);
+  cursor: pointer;
+}
+
+.carrito-acciones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carrito-acciones-vaciar {
+  border: 0;
+  background-color: var(--clr-gray);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--clr-main);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.carrito-acciones-derecha {
+  display: flex;
+}
+
+.carrito-acciones-total {
+  display: flex;
+  background-color: var(--clr-gray);
+  padding: 1rem;
+  color: var(--clr-main);
+  text-transform: uppercase;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  gap: 1rem;
+}
+
+.carrito-acciones-comprar {
+  border: 0;
+  background-color: var(--clr-main);
+  padding: 1rem;
+  color: var(--clr-white);
+  text-transform: uppercase;
+  cursor: pointer;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.header-mobile {
+  display: none;
+}
+
+.close-menu {
+  display: none;
+}
+
+.disabled {
+  display: none;
+}

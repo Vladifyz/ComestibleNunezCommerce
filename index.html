@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vladify</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+
+        <input type="text" class="buscador" id="buscador" placeholder="Buscar productos...">
+
+        <ul class="sidebar__list">
+            <li class="sidebar__element">
+                <img src="./assets/CN.png" class="sidebar__icon sidebar__icon--logo">
+
+                <div class="sidebard__hide">
+                    <p class="sidebar__text">Comestibles Nuñez</p>
+                </div>
+            </li>
+
+            <li class="sidebar__element">
+                <i class='bx bx-home-circle'></i>
+
+                <div id="todos" class="boton-categoria sidebard__hide">
+                    <p class="sidebar__text">Todos los productos</p>
+                </div>
+            </li>
+
+            <li class="sidebar__element">
+                <i class='bx bxs-package'></i>
+
+                <div id="bebidas" class="boton-categoria sidebard__hide">
+                    <p class="sidebar__text">Bebidas</p>
+                </div>
+            </li>
+
+            <li class="sidebar__element">
+                <i class='bx bxs-package'></i>
+
+                <div id="almacen" class="boton-categoria sidebard__hide">
+                    <p class="sidebar__text">Almacen</p>
+                </div>
+            </li>
+
+            <li class="sidebar__element">
+                <i class='bx bxs-package'></i>
+
+                <div id="cigarros" class="boton-categoria sidebard__hide">
+                    <p class="sidebar__text">Cigarrillos</p>
+                </div>
+            </li>
+
+            <li class="sidebar__element">
+                <i class='bx bxs-package'></i>
+
+                <div id="lacteos" class="boton-categoria sidebard__hide">
+                    <p class="sidebar__text">Lacteos</p>
+                </div>
+            </li>
+
+            <li class="sidebar__element">
+                <i class='bx bxs-package'></i>
+
+                <div id="limpieza" class="boton-categoria sidebard__hide">
+                    <p class="sidebar__text">Limpieza</p>
+                </div>
+            </li>
+
+            <li class="sidebar__element">
+                <i class='bx bx-cart'></i>
+
+                <div id="carrito" class="boton-categoria sidebard__hide">
+                    <a href="cart.html">
+                        <p class="sidebar__text">Carrito <span id="numerito" class="numerito">0</span></p>
+                    </a>
+                </div>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main>
+
+        <div class="searcher">
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+        </div>
+        <div id="contenedor-productos" class="contenedor-productos">
+        </div>
+
+        <script src="js/main.js"></script>
+</body>
+
+</html>
